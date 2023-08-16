@@ -12,7 +12,7 @@ public class AttackButton : MonoBehaviour
 
     public void CauseDamage()
     {
-        _health.TakeGamage(_enemy.Damage);
+        _health.TakeDamage(_enemy.Damage);
         _enemyAnimator.SetTrigger(AnimatorData.Params.AttackParamHash);
         _heroAnimator.SetTrigger(AnimatorData.Params.TakeDamageParamHash);
     }
